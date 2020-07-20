@@ -22,10 +22,15 @@ def selection_sort(arr):
 def bubble_sort(arr):
     # Your code here
     n = len(arr)
+    # loop through the array
     for i in range(n-1):
+        # loop through the array again by subtracting i
         for j in range(0, n-i-1):
+            # compare the current and next elements
             if arr[j] > arr[j+1]:
+                # if true swap the two elements
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+            # if false repeat range of i and continue swapping until all elements are sorted
     return arr
 
 
